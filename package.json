@@ -1,0 +1,23 @@
+{
+  "name": "iconsai-fiscal-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "predev": "lsof -ti :3106 | xargs kill -9 2>/dev/null || true",
+    "dev": "next dev -p 3106",
+    "build": "next build",
+    "start": "next start -p 3106",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "15.5.15",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.7",
+    "@types/react-dom": "19.0.3",
+    "typescript": "5.7.3"
+  }
+}
